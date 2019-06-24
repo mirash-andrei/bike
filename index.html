@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Байк лига</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- slick slider CSS -->
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+    <!-- font awecowe CSS -->
+    <link href="fontawesome-pro/css/all.min.css" rel="stylesheet">
+    <!-- star CSS -->
+    <link rel="stylesheet" href="css/starrr.css">
+    <!-- Custom styles for this template -->
+    <link href="template_styles.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 d-flex justify-content-center justify-content-md-start align-items-start mb-md-0 mb-3">
+                <a class="absolute_link" href=""></a>
+                <object
+                        type="image/svg+xml"
+                        data="img/logo3.svg">
+                    <img
+                            src="img/logo3.png">
+                </object>
+            </div>
+            <div class="col-lg-4 col-md-8 d-flex align-items-lg-start align-items-center">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Поиск по сайту" aria-label="Поиск по сайту" aria-describedby="button-addon">
+                    <div class="input-group-append">
+                        <button class="btn" type="button" id="button-addon">Искать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-12 mt-2 mt-lg-0 header_contacts">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5">
+                        <div class="col-12 lh-0 p-0">
+                            <a href="tel:8 (918) 970 18 18 ">8 (918) 970 18 18 </a>
+                        </div>
+                        <div class="col-12 lh-0 p-0">
+                            <a href="mailto:bikeliga@mail.ru">bikeliga@mail.ru</a>
+                        </div>
+                        <div class="col-12 social_icons">
+                            <div class="row align-items-center justify-content-md-between justify-content-around">
+                                <div class="soc_link">
+                                    <a class="absolute_link" href=""></a>
+                                    <object
+                                            type="image/svg+xml"
+                                            data="img/vk.svg">
+                                        <img
+                                                src="img/vk.png">
+                                    </object>
+                                </div>
+                                <div class="soc_link">
+                                    <a class="absolute_link" href=""></a>
+                                    <object
+                                        type="image/svg+xml"
+                                        data="img/fb.svg">
+                                        <img
+                                            src="img/fb.png">
+                                    </object>
+                                </div>
+                                <div class="soc_link">
+                                    <a class="absolute_link" href=""></a>
+                                    <object
+                                            type="image/svg+xml"
+                                            data="img/inst.svg">
+                                        <img
+                                                src="img/inst.png">
+                                    </object>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7">
+                        <p>г. Краснодар <br> ул. Академика Трубилина д. 30 <br> пн-вс: 10:00-19:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-2 col-6 mt-2 mt-md-0 d-flex align-items-center flex-column svg_head">
+                <a class="absolute_link" href=""></a>
+                <svg width="30" height="27" viewBox="0 0 30 27" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.59819 22.3929C5.59819 23.4229 6.43326 24.2589 7.46426 24.2589H26.125C27.156 24.2589 27.991 23.4229 27.991 22.3929V3.73214C27.991 2.70114 27.156 1.86607 26.125 1.86607H7.46426C6.43326 1.86607 5.59819 2.70114 5.59819 3.73214V6.53125H3.73212V3.73214C3.73212 1.67107 5.40319 0 7.46426 0H26.125C28.186 0 29.8571 1.67107 29.8571 3.73214V22.3929C29.8571 24.4539 28.186 26.125 26.125 26.125H7.46426C5.40319 26.125 3.73212 24.4539 3.73212 22.3929V19.5937H5.59819V22.3929ZM0.933014 12.1295H21.0735L16.1816 7.23758C15.8168 6.87373 15.8168 6.28215 16.1816 5.9183C16.5464 5.55348 17.137 5.55348 17.5009 5.9183L23.9379 12.3562C24.1329 12.5502 24.216 12.8077 24.2029 13.0625C24.216 13.3172 24.1329 13.5748 23.9389 13.7688L17.5019 20.2058C17.138 20.5706 16.5464 20.5706 16.1826 20.2058C15.8178 19.8419 15.8178 19.2504 16.1826 18.8865L21.0735 13.9955H0.933014C0.417978 13.9955 -2.28882e-05 13.5775 -2.28882e-05 13.0625C-2.28882e-05 12.5475 0.417978 12.1295 0.933014 12.1295Z" fill="black"/>
+                </svg>
+                <p>Вход</p>
+            </div>
+            <div class="col-lg-1 col-md-2 col-6 mt-2 mt-md-0 d-flex align-items-center flex-column svg_head">
+                <a class="absolute_link" href=""></a>
+                <svg width="28" height="26" viewBox="0 0 28 26" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.9898 4.85973C26.8258 4.63492 26.564 4.50188 26.2858 4.50188H6.68045C6.64247 4.50188 6.60455 4.50419 6.56802 4.50911L5.76116 2.18323C5.67754 1.94268 5.49339 1.75094 5.25673 1.65777L1.19036 0.0603441C0.742201 -0.115115 0.236488 0.105014 0.0604822 0.552626C-0.11522 1.00048 0.104848 1.5065 0.552764 1.6825L4.24597 3.13334L8.76651 16.1635C8.56699 16.2331 8.39791 16.3862 8.32091 16.6003L7.01387 20.231C6.93377 20.4536 6.96677 20.701 7.10309 20.8944C7.23922 21.0879 7.46063 21.2031 7.69705 21.2031H8.36825C7.9523 21.6659 7.69705 22.2755 7.69705 22.9458C7.69705 24.3873 8.86989 25.5599 10.3111 25.5599C11.7524 25.5599 12.9252 24.3873 12.9252 22.9458C12.9252 22.2755 12.6699 21.6659 12.254 21.2031H17.9533C17.5372 21.6659 17.2818 22.2755 17.2818 22.9458C17.2818 24.3873 18.4544 25.5599 19.896 25.5599C21.3374 25.5599 22.51 24.3873 22.51 22.9458C22.51 22.2755 22.2548 21.6659 21.8389 21.2031H22.6553C23.0564 21.2031 23.3814 20.878 23.3814 20.4769C23.3814 20.0758 23.0563 19.7508 22.6553 19.7508H8.73023L9.5397 17.5024C9.64423 17.5464 9.75715 17.5724 9.87536 17.5724H22.6551C23.034 17.5724 23.3693 17.3276 23.4847 16.9671L27.1154 5.63935C27.2005 5.37413 27.1538 5.08453 26.9898 4.85973ZM10.3111 24.1076C9.67037 24.1076 9.14934 23.5865 9.14934 22.9458C9.14934 22.305 9.67037 21.7839 10.3111 21.7839C10.9519 21.7839 11.4729 22.305 11.4729 22.9458C11.4729 23.5865 10.9519 24.1076 10.3111 24.1076ZM19.8959 24.1076C19.2552 24.1076 18.7341 23.5865 18.7341 22.9458C18.7341 22.305 19.2552 21.7839 19.8959 21.7839C20.5366 21.7839 21.0577 22.305 21.0577 22.9458C21.0577 23.5865 20.5366 24.1076 19.8959 24.1076ZM24.4634 8.20517H20.017V6.24462H25.0917L24.4634 8.20517ZM23.183 12.1989H20.017V9.94785H23.9046L23.183 12.1989ZM14.2562 12.1989V9.94785H18.2742V12.1989H14.2562ZM18.2742 13.9417V15.8296H14.2562V13.9417H18.2742ZM8.4548 9.94785H12.5136V12.1989H9.23582L8.4548 9.94785ZM14.2562 8.20517V6.24462H18.2742V8.20517H14.2562ZM12.5136 6.24462V8.20517H7.85002L7.16988 6.24462H12.5136ZM9.84054 13.9417H12.5136V15.8296H10.4955L9.84054 13.9417ZM20.017 15.8297V13.9418H22.6248L22.0198 15.8297H20.017Z" fill="black"/>
+                </svg>
+                <p>Корзина</p>
+            </div>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 d-flex flex-row justify-content-between justify-content-md-start">
+                <a href="" class="d-flex">
+                    <div class="toggler d-flex flex-column justify-content-center mr-2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>Каталог</a>
+                <a href="" class="d-flex d-md-none" id="menu">
+                    <div class="toggler d-flex flex-column justify-content-center mr-2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>Меню</a>
+            </div>
+            <div class="col-lg-10 col-md-10 nav_list d-md-flex d-none align-items--center justify-content-between flex-column flex-md-row">
+                <a href="">Подбор запчастей</a>
+                <a href="">Новости</a>
+                <a href="">Акции</a>
+                <a href="">О компании</a>
+                <a href="">Как оформить заказ</a>
+                <a href="">Доставка и оплата</a>
+                <a href="">Контакты</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-2 col-lg-3 mt-lg-0 mt-3">
+                <ul class="accordeon">
+                    <li>
+                        <a href="#">Шлемы <i class="fal fa-chevron-down"></i></a>
+                        <ul>
+                            <li>A3</li>
+                            <li>A4</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Мотоэкипировка <i class="fal fa-chevron-down"></i></a>
+                        <ul>
+                            <li>X3</li>
+                            <li>X5</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Расходники <i class="fal fa-chevron-down"></i></a>
+                        <ul>
+                            <li>A</li>
+                            <li>C</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Запчасти <i class="fal fa-chevron-down"></i></a>
+                        <ul>
+                            <li>A</li>
+                            <li>C</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Масло и мотохимия <i class="fal fa-chevron-down"></i></a>
+                        <ul>
+                            <li>A</li>
+                            <li>C</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Моторезина <i class="fal fa-chevron-down"></i></a>
+                        <ul>
+                            <li>A</li>
+                            <li>C</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Аксессуары <i class="fal fa-chevron-down"></i></a>
+                        <ul>
+                            <li>A</li>
+                            <li>C</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Багаж <i class="fal fa-chevron-down"></i></a>
+                        <ul>
+                            <li>A</li>
+                            <li>C</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Мотоциклы <i class="fal fa-chevron-down"></i></a>
+                        <ul>
+                            <li>A</li>
+                            <li>C</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xl-10 col-lg-9 mt-lg-0 mt-3">
+                <div class="main_slider">
+                    <div style="background: url(img/slider_img.png); background-size: cover; background-position: center;">1</div>
+                    <div style="background: url(img/slider_img.png); background-size: cover; background-position: center;">2</div>
+                    <div style="background: url(img/slider_img.png); background-size: cover; background-position: center;">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about" style="background: url(img/about.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 offset-xl-6 col-lg-7 offset-lg-5">
+                <p>БайкЛига - это один из крупных интернет-мотомагазинов на юге России.
+                    Здесь вы найдете все необходимое для себя и своего двухколесного транспорта.
+                    Мы готовы предложить вашему вниманию мотозапчасти, мотоэкипировку, мотохимию,
+                    и различные аксессуары известных бренодов. Мы работаем офицально, все условия
+                    покупки, возврата, обмена, находятся в соотсветствующих разделах нашего сайта.
+                </p>
+                <p>
+                    Будем рады помочь вам стать стчастливым обладателями лучших мотоциклетных товаров.
+                </p>
+                <p>
+                    БайкЛига - это надежная марка и надежный партнер!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popular_product">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3>Популярные товары</h3>
+            </div>
+            <div class="col-lg-3 col-md-4 product_card">
+                <div class="col-12 p-0 content_product" style="height:250px;background: url(img/test_product.png); background-position: center; background-repeat: no-repeat; background-size: contain;">
+                    <div class="name_product col-12 pr-0">
+                        <div class='starrr' id='star1'></div>
+                        <p class="m-0">Цепь EK 520 SROZ2</p>
+                    </div>
+                </div>
+                <div class="col-12 price_add_basket">
+                    <div class="row">
+                        <div class="col-lg-7 mb-md-0 mb-2 price">
+                            43 300 руб.
+                        </div>
+                        <div class="col-lg-5 p-0 mb-md-0 mb-3">
+                            <button class="btn" type="submit">Купить <i class="fal fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 product_card">
+                <div class="col-12 p-0 content_product" style="height:250px;background: url(img/test_product.png); background-position: center; background-repeat: no-repeat; background-size: contain;">
+                    <div class="name_product col-12 pr-0">
+                        <div class='starrr' id='star1'></div>
+                        <p class="m-0">Цепь EK 520 SROZ2</p>
+                    </div>
+                </div>
+                <div class="col-12 price_add_basket">
+                    <div class="row">
+                        <div class="col-lg-7 mb-md-0 mb-2 price">
+                            43 300 руб.
+                        </div>
+                        <div class="col-lg-5 p-0 mb-md-0 mb-3">
+                            <button class="btn" type="submit">Купить <i class="fal fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 product_card">
+                <div class="col-12 p-0 content_product" style="height:250px;background: url(img/test_product.png); background-position: center; background-repeat: no-repeat; background-size: contain;">
+                    <div class="name_product col-12 pr-0">
+                        <div class='starrr' id='star1'></div>
+                        <p class="m-0">Цепь EK 520 SROZ2</p>
+                    </div>
+                </div>
+                <div class="col-12 price_add_basket">
+                    <div class="row">
+                        <div class="col-lg-7 mb-md-0 mb-2 price">
+                            43 300 руб.
+                        </div>
+                        <div class="col-lg-5 p-0 mb-md-0 mb-3">
+                            <button class="btn" type="submit">Купить <i class="fal fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 logo_footer d-flex justify-content-center justify-content-md-start">
+                <a class="absolute_link" href=""></a>
+                <object
+                        type="image/svg+xml"
+                        data="img/logo3.svg">
+                    <img
+                            src="img/logo3.png">
+                </object>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <ul>
+                    <li><a href="">Кредит</a></li>
+                    <li><a href="">Рассрочка</a></li>
+                    <li><a href="">Возврат товара</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <ul>
+                    <li><a href="">Сертификаты</a></li>
+                    <li><a href="">Политика конфиденциальности </a></li>
+                    <li><a href="">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <p>Контакты</p>
+                <p>
+                    г. Краснодар, <br>
+                    ул. Академика Трубилина д. 30 <br>
+                    Режим рыботы: пн-вс: 10-19 <br>
+                    email: <a href="mailto:bikeliga@mail.ru">bikeliga@mail.ru</a> <br>
+                    <a href="tel:8 (918) 970 18 18">8 (918) 970 18 18</a>
+                </p>
+                <div class="col-md-9 social_icons">
+                    <div class="row align-items-center justify-content-md-between justify-content-around">
+                        <div class="soc_link">
+                            <a class="absolute_link" href=""></a>
+                            <object
+                                    type="image/svg+xml"
+                                    data="img/vk.svg">
+                                <img
+                                        src="img/vk.png">
+                            </object>
+                        </div>
+                        <div class="soc_link">
+                            <a class="absolute_link" href=""></a>
+                            <object
+                                    type="image/svg+xml"
+                                    data="img/fb.svg">
+                                <img
+                                        src="img/fb.png">
+                            </object>
+                        </div>
+                        <div class="soc_link">
+                            <a class="absolute_link" href=""></a>
+                            <object
+                                    type="image/svg+xml"
+                                    data="img/inst.svg">
+                                <img
+                                        src="img/inst.png">
+                            </object>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-8 card_block">
+                <p class="m-0">Принимаем к оплате</p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-3 col-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                        <div class="soc_link">
+                            <a class="absolute_link" href=""></a>
+                            <object
+                                    type="image/svg+xml"
+                                    data="img/visa.svg">
+                                <img
+                                        src="img/visa.png">
+                            </object>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-3 col-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                        <div class="soc_link">
+                            <a class="absolute_link" href=""></a>
+                            <object
+                                    type="image/svg+xml"
+                                    data="img/mir-logo.svg">
+                                <img
+                                        src="img/mir-logo.png">
+                            </object>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-3 col-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                        <div class="soc_link">
+                            <a class="absolute_link" href=""></a>
+                            <object
+                                    type="image/svg+xml"
+                                    data="img/mastercard.svg">
+                                <img
+                                        src="img/mastercard.png">
+                            </object>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-3 col-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                        <div class="soc_link">
+                            <a class="absolute_link" href=""></a>
+                            <object
+                                    type="image/svg+xml"
+                                    data="img/mastercard2.svg">
+                                <img
+                                        src="img/mastercard2.png">
+                            </object>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 oferta d-flex justify-content-center">Информация на сайте не является публичной офертой</div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="slick/slick.min.js"></script>
+<script src="js/starrr.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
