@@ -1,5 +1,12 @@
 @charset "UTF-8";
-
+//COLORS
+$white: #FDFDFD;
+$blue: #00BAC6;
+$gray: #7A7A7A;
+$gray2: #DBDBDB;
+$black: #131313;
+//MARGINS
+$horizontal_margin: 50px;
 @font-face {
   font-family: 'Lato';
   src :url('../fonts/Lato-Regular.ttf') format('truetype');
@@ -17,10 +24,11 @@
   width: 100%;
 }
 .btn.focus, .btn:focus,.form-control:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem #00bac62e;
-  -webkit-box-shadow: 0 0 0 0.2rem #00bac62e;
-  -moz-box-shadow: 0 0 0 0.2rem #00bac62e;
+  outline: 0!important;
+  border-color: $blue!important;
+  box-shadow: 0 0 0 0.2rem #00bac62e!important;
+  -webkit-box-shadow: 0 0 0 0.2rem #00bac62e!important;
+  -moz-box-shadow: 0 0 0 0.2rem #00bac62e!important;
 }
 @mixin animation_0_25 {
   transition: all .25s ease-out;
@@ -42,11 +50,3 @@
 }
 
 
-//COLORS
-$white: #FDFDFD;
-$blue: #00BAC6;
-$gray: #7A7A7A;
-$gray2: #DBDBDB;
-$black: #131313;
-//MARGINS
-$horizontal_margin: 50px;
