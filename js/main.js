@@ -124,7 +124,10 @@ $( document ).ready(function() {
                 $(this).addClass('active');
             });
         }
-
+        // fucking filter
+        $('.bx_filter_container_title').click(function () {
+           $(this).parent().toggleClass('active');
+        });
 
 
 });

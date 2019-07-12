@@ -254,6 +254,131 @@ footer {
 
 .catalog {
   margin-top: 23px; }
+  .catalog .catalog_products .breadcrumb {
+    margin-top: 0; }
+  .catalog .catalog_products h1 {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 18px; }
+  .catalog .catalog_products .form_sort form {
+    position: relative; }
+    .catalog .catalog_products .form_sort form i {
+      position: absolute;
+      top: 4px;
+      right: 3px; }
+  .catalog .catalog_products select {
+    position: relative;
+    min-width: 114px;
+    height: 26px;
+    padding-left: 15px;
+    padding-bottom: 2px;
+    -webkit-appearance: none;
+    border: none;
+    background: #fff;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none !important; }
+    .catalog .catalog_products select:focus {
+      outline: none; }
+  .catalog .catalog_products select::-ms-expand {
+    display: none; }
+  .catalog .catalog_products .list_product {
+    margin-top: 18px; }
+    .catalog .catalog_products .list_product .product_card {
+      margin-bottom: 47px; }
+
+.bx_filter_vertical {
+  background: #FDFDFD;
+  padding-top: 13px;
+  margin-top: 11px;
+  -webkit-box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.05); }
+  .bx_filter_vertical .bx_filter_container {
+    padding: 0 17px; }
+  .bx_filter_vertical * {
+    font-size: 14px; }
+  .bx_filter_vertical .bx_filter_container .bx_filter_container_title {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 128.69%;
+    margin-bottom: 20px; }
+  .bx_filter_vertical .bx_filter_container .bx_input_container label {
+    padding-right: 8px; }
+  .bx_filter_vertical .bx_filter_container .bx_input_container input {
+    border-radius: 3px;
+    border: 1px solid #131313;
+    width: 63px;
+    line-height: 15px; }
+  .bx_filter_vertical .bx_filter_param_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+  .bx_filter_vertical .bx_ui_slider_track {
+    margin: -10px 10px 13px;
+    background: #00BAC6;
+    height: 3px;
+    position: relative;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35), inset 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 3px; }
+  .bx_filter_vertical .bx_ui_slider_range {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #131313; }
+  .bx_filter_vertical .bx_ui_slider_handle {
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    border-radius: 50%; }
+  .bx_filter_vertical .bx_ui_slider_handle.left {
+    background: #131313;
+    margin-left: -5px; }
+  .bx_filter_vertical .bx_ui_slider_handle.right {
+    background: #131313;
+    margin-right: -5px; }
+  .bx_filter_vertical .filters {
+    margin-bottom: 20px;
+    padding: 0 17px; }
+    .bx_filter_vertical .filters .fil_name {
+      font-weight: 600;
+      font-size: 14px; }
+    .bx_filter_vertical .filters .bx_filter_del_button {
+      background: #00BAC6;
+      border: 1px solid #00BAC6;
+      color: #FDFDFD;
+      padding: 1px 7px; }
+      .bx_filter_vertical .filters .bx_filter_del_button:hover {
+        background: #FDFDFD;
+        color: #00BAC6; }
+  .bx_filter_vertical .bx_filter_container .bx_filter_container_title {
+    cursor: pointer; }
+  .bx_filter_vertical .bx_filter_container .bx_filter_container_modef {
+    float: right; }
+  .bx_filter_vertical .bx_filter_container .bx_filter_block {
+    display: none;
+    flex-direction: column; }
+  .bx_filter_vertical .bx_filter_container.active .bx_filter_block {
+    display: flex; }
+  .bx_filter_vertical .bx_filter_search_button {
+    width: 100%;
+    background: #00BAC6;
+    border: 1px solid #00BAC6;
+    color: #FDFDFD; }
+    .bx_filter_vertical .bx_filter_search_button:hover {
+      background: #FDFDFD;
+      color: #00BAC6; }
 
 .breadcrumb {
   background: none;
