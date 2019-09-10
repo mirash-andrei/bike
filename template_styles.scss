@@ -62,10 +62,10 @@ header{
     }
   }
   .col-lg-1{
-  p{
-    font-size: 13px;
-    margin-top: 6px;
-  }
+    p{
+      font-size: 13px;
+      margin-top: 6px;
+    }
   }
   .svg_head:hover{
     *{
@@ -119,18 +119,32 @@ nav.nav_panel{
   border: 1px solid $black;
   border-top: 0px;
   border-radius: 0px 3px 3px 0px;
+  position: relative;
+  &:hover{
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+    @media (min-width: 992px){
+      a i{
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+      }
+    }
+  }
 }
 .accordeon> li:first-child{
   border-top: 1px solid #131313;
 }
 .accordeon > li > a {
   color: #333;
-  font-size: 14px;
+  font-size: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 41px;
-  padding-left: 15px;
+  padding-left: 10px;
   padding-right: 7px;
   text-decoration: none;
   width: 100%;
@@ -147,18 +161,34 @@ nav.nav_panel{
 }
 .accordeon > li > ul {
   display: none;
-  width: 100%;
+  width: 950px;
   background: #FFF;
   padding: 10px 0;
+  position: absolute;
+  z-index: 2;
+  left: 160px;
+  top: 0;
 }
-.accordeon > li.active > ul {
-  display: block;
-}
+
 .accordeon > li > ul > li {
   padding: 5px 30px;
   text-decoration: none;
   display: block;
   color: #333;
+  width: 33.3333%;
+  flex: 0 0 33.3333%;
+  a{
+    color: $black;
+    &:hover{
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+  img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
 }
 
 .slick-track,.slick-initialized .slick-slide,.slick-list,.main_slider{
@@ -196,6 +226,7 @@ nav.nav_panel{
 }
 .about{
   margin: $horizontal_margin 0;
+  padding: $horizontal_margin 0;
   p{
     font-size: 18px;
     line-height: 128.69%;
@@ -207,7 +238,7 @@ nav.nav_panel{
 .popular_product{
   margin-bottom: 77px;
   h3{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 128.69%;
     margin-bottom: 20px;
   }
@@ -261,6 +292,10 @@ nav.nav_panel{
 footer{
   background: $black;
   padding-top: 25px;
+  img{
+    width: 154px;
+    height: 41px;
+  }
   ul{
     padding: 0;
     margin: 0;
@@ -467,11 +502,6 @@ footer{
     }
   }
 }
-
-
-
-
-
 // page news list
 .breadcrumb{
   background: none;
@@ -533,14 +563,14 @@ h1{
         }
       }
     }
-  .absolute_line{
-    position: absolute;
-    right: 12px;
-    bottom: 26px;
-    background: $blue;
-    height: 1px;
+    .absolute_line{
+      position: absolute;
+      right: 12px;
+      bottom: 26px;
+      background: $blue;
+      height: 1px;
 
-  }
+    }
   }
 }
 .plagination{
@@ -566,7 +596,6 @@ h1{
     padding-right: 16px;
   }
 }
-
 // detail page news
 .news_detail{
   margin-bottom: 60px;
@@ -607,7 +636,7 @@ h1{
     right: 0;
     top: 0;
     height: 100%;
-    width: 50%; 
+    width: 50%;
   }
 }
 //text page
@@ -826,15 +855,14 @@ h1{
   background: $blue;
   border-color: $blue;
   &:hover{
-  color: $blue;
-  background: $white;
-}
+    color: $blue;
+    background: $white;
+  }
 }
 // modal css
 .ask_product {
   text-align: center;
 }
-
 .cover {
   display: none;
   position: fixed;
@@ -846,7 +874,6 @@ h1{
   opacity: 0.6;
   z-index: 100;
 }
-
 .modal {
   display: none;
   position: fixed;
@@ -863,7 +890,6 @@ h1{
   margin: auto;
   height: max-content;
 }
-
 .content {
   display: none;
   flex-direction: column;
@@ -921,15 +947,13 @@ h1{
     @include animation_0_25;
     &:hover{
       color: $blue;
-      @include animation_0_25; 
+      @include animation_0_25;
     }
   }
 }
-
 .open-modal-btn {
   cursor: pointer;
 }
-
 // Большие девайсы (большие десктопы, < 1200px)
 @media (max-width: 1199.98px) {
   header{
@@ -971,6 +995,16 @@ h1{
   .card_product .description dl dt {
     width: 180px;
   }
+  .accordeon > li > ul {
+    display: none;
+    width: 720px;
+    background: #FFF;
+    padding: 10px 0;
+    position: absolute;
+    z-index: 2;
+    left: 210px;
+    top: 0;
+  }
 }
 // Средние девайсы («таблетки», < 992px)
 @media (max-width: 991.98px) {
@@ -993,7 +1027,7 @@ h1{
   .popular_product .product_card {
     margin-right: 0;
   }
-// contacts
+  // contacts
   .contacts{
     #map{
       position: relative;
@@ -1020,7 +1054,21 @@ h1{
       margin-bottom: 10px;
     }
   }
-
+  .accordeon > li > ul {
+    width: 100%;
+    left: 0;
+    position: relative;
+  }
+  .accordeon > li > ul > li {
+    width: 50%;
+    float: left;
+  }
+  .accordeon > li:hover ul {
+    display: none;
+    flex-wrap: wrap;
+  }
+  .accordeon > li.slide > ul {
+  }
 }
 // Малые девайсы («ландшафтные», < 768px)
 @media (max-width: 767.98px) {
@@ -1071,9 +1119,9 @@ h1{
   // contacts
   .contacts{
     #map {
-    height: 350px;
+      height: 350px;
     }
-    }
+  }
   //page detail product
 
 }
@@ -1107,6 +1155,9 @@ h1{
     margin-bottom: 20px;
   }
   .card_product .add_basket, .card_product .open_btn_credit {
+    width: 100%;
+  }
+  .accordeon > li > ul > li {
     width: 100%;
   }
 }
