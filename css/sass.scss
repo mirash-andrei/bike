@@ -26,6 +26,7 @@ $horizontal_margin: 50px;
 .btn.focus, .btn:focus,.form-control:focus {
   outline: 0!important;
   border-color: $blue!important;
+  width: 100%;
   box-shadow: 0 0 0 0.2rem #00bac62e!important;
   -webkit-box-shadow: 0 0 0 0.2rem #00bac62e!important;
   -moz-box-shadow: 0 0 0 0.2rem #00bac62e!important;
